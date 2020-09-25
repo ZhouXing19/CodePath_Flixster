@@ -12,11 +12,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.annotation.GlideModule;
+import com.bumptech.glide.module.AppGlideModule;
+
 import com.bumptech.glide.Glide;
 import com.example.flixter.R;
 import com.example.flixter.models.Movie;
 
 import java.util.List;
+
+import jp.wasabeef.glide.transformations.BlurTransformation;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.ViewHolder>{
 
@@ -84,8 +90,11 @@ public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.ViewHolder>
                 imageUrl = movie.getPosterPath();
             }
 
-            Glide.with(context).load(imageUrl).into(ivPoster);
-
+            Glide.with(context)
+                    .load(imageUrl)
+                    .placeholder(R.drawable.shinji_mug)
+//                    .transform(new RoundedCornersTransformation(30, 30))
+                    .into(ivPoster);
         }
     }
 }
