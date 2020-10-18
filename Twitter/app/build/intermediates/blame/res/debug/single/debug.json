@@ -16,12 +16,20 @@
         "source": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/src/main/res/drawable-mdpi/ic_launcher.png"
     },
     {
+        "merged": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/build/intermediates/res/merged/debug/layout_activity_compose.xml.flat",
+        "source": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/src/main/res/layout/activity_compose.xml"
+    },
+    {
         "merged": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
         "source": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     },
     {
         "merged": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
         "source": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/build/intermediates/res/merged/debug/menu_manu_main.xml.flat",
+        "source": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/src/main/res/menu/manu_main.xml"
     },
     {
         "merged": "/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",

@@ -1,4 +1,4 @@
-#Sun Oct 11 11:13:39 CDT 2020
+#Sun Oct 18 00:36:22 CDT 2020
 base.0=/Users/zhou/AndroidStudioProjects/CodePath_android/Twitter/app/build/intermediates/dex/debug/mergeExtDexDebug/out/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

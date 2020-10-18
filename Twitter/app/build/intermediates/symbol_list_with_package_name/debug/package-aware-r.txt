@@ -901,6 +901,7 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnTweet
 id buttonPanel
 id center
 id center_vertical
@@ -910,6 +911,7 @@ id checkbox
 id checked
 id chronometer
 id collapseActionView
+id compose
 id content
 id contentPanel
 id cos
@@ -937,6 +939,7 @@ id easeInOut
 id easeOut
 id edit_query
 id end
+id etCompose
 id expand_activities_button
 id expanded_menu
 id flip
@@ -1065,6 +1068,7 @@ id transitionToEnd
 id transitionToStart
 id triangle
 id tvBody
+id tvCounter
 id tvScreenName
 id unchecked
 id uniform
@@ -1114,6 +1118,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_compose
 layout activity_login
 layout activity_timeline
 layout custom_dialog
@@ -1129,6 +1134,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu login
+menu manu_main
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -1162,6 +1168,7 @@ string intent_scheme
 string login_label
 string search_menu_title
 string status_bar_notification_info_overflow
+string tweet
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
