@@ -2,12 +2,18 @@ package com.example.myinstagram;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.parse.LogInCallback;
+import com.parse.ParseException;
+import com.parse.ParseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -15,7 +21,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText etEmail;
     private EditText etPassword;
-    private FloatingActionButton loginBtn;
+    private Button loginBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +41,31 @@ public class LoginActivity extends AppCompatActivity {
                 loginUser(username, password);
             }
 
-            private void loginUser(String username, String password) {
-                Log.i(TAG, "loginUser: Attempts to login!");
 
-            }
         });
+    }
+
+    private void loginUser(String username, String password) {
+            Log.i(TAG, "loginUser: Attempts to login!");
+
+            ParseUser.logInInBackground(username, password, new LogInCallback() {
+                @Override
+                public void done(ParseUser user, ParseException e) {
+                    if (e!=null){
+                        Log.e(TAG, "Issue with login", e );
+                        return;
+                    }
+                    goMainActivity();
+                    Toast.makeText(LoginActivity.this, "Suceess login", Toast.LENGTH_SHORT).show();
+                }
+
+
+            });
+
+    }
+
+    private void goMainActivity() {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
