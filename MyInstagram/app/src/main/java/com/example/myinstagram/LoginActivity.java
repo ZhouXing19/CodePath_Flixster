@@ -57,6 +57,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
                     goMainActivity();
                     Toast.makeText(LoginActivity.this, "Suceess login", Toast.LENGTH_SHORT).show();
+                    finish();
                 }
 
 
