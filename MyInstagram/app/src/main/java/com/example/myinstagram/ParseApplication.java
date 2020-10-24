@@ -6,10 +6,12 @@ import com.parse.Parse;
 import com.parse.ParseObject;
 
 public class ParseApplication extends Application {
+
+    public static final String APP_TAG = ParseApplication.class.getSimpleName();
+
     @Override
     public void onCreate() {
         super.onCreate();
-
         //Register yout parse models
         ParseObject.registerSubclass(Post.class);
 
