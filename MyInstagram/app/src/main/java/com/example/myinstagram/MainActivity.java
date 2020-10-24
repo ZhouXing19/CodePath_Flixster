@@ -66,7 +66,12 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Descriptio cannot be empty", Toast.LENGTH_SHORT).show();
                     return;
                 }
+                if (photoFile == null || ivPostImage.getDrawable() == null){
+                    Toast.makeText(MainActivity.this, "There is no image", Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 ParseUser currentUser = ParseUser.getCurrentUser();
+                savePost(description, currentUser, photoFile);
             }
         });
     }
@@ -124,7 +129,7 @@ public class MainActivity extends AppCompatActivity {
         return new File(mediaStorageDir.getPath() + File.separator + fileName);
     }
 
-    private void savePost(String description, File photoFile, ParseUser user) {
+    private void savePost(String description, ParseUser user, File photoFile) {
         Post post = new Post();
         post.setDescription(description);
         post.setImage(new ParseFile(photoFile));

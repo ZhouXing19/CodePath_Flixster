@@ -9,14 +9,11 @@
 
 
 
-    <ImageView
-        android:id="@+id/ivPic"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etDescrip"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="150dp"
-        app:srcCompat="@android:drawable/ic_menu_gallery"
+        android:minLines="2"
         />
 
     <Button
@@ -24,19 +21,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Camara"
-        android:layout_below="@+id/ivPic"
+        android:layout_below="@+id/etDescrip"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/darkBlue"
         android:textColor="@android:color/white"
         />
 
-    <EditText
-        android:id="@+id/etDescrip"
+    <ImageView
+        android:id="@+id/ivPic"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minLines="10"
-        android:layout_below="@id/btnCaptureImage"/>
-
+        android:layout_height="200dp"
+        android:layout_below="@id/btnCaptureImage"
+        tools:srcCompat="@tools:sample/avatars" />
     <Button
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
@@ -44,9 +40,11 @@
         android:backgroundTint="@color/danganRed"
         android:text="post"
         android:textColor="@android:color/white"
-        android:layout_below="@id/etDescrip"
+        android:layout_below="@id/ivPic"
         android:layout_marginTop="10dp"
         />
+
+
 
 
 </RelativeLayout>
