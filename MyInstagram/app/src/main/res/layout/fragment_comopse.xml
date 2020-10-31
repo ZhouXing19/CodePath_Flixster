@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ComopseFragment">
+
+
+    <EditText
+        android:id="@+id/etDescrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        />
+
+    <Button
+        android:id="@+id/btnCaptureImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Camara"
+        android:layout_below="@+id/etDescrip"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/darkBlue"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageView
+        android:id="@+id/ivPic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/btnCaptureImage"
+        tools:srcCompat="@tools:sample/avatars" />
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/danganRed"
+        android:text="post"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/ivPic"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
