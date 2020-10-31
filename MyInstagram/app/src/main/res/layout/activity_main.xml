@@ -44,6 +44,14 @@
         android:layout_marginTop="10dp"
         />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@android:color/white"
+        app:menu="@menu/menu_bottom_navigation" />
+
 
 
 
